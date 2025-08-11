@@ -3,17 +3,8 @@ export const InformationLayout = ({
 	currentPlayer,
 	isDraw,
 	isGameEnded,
-	setField,
-	setCurrentPlayer,
-	setIsDraw,
-	setIsGameEnded,
+	handleRestart,
 }) => {
-	const handleRestart = () => {
-		setIsGameEnded(false);
-		setField(['', '', '', '', '', '', '', '', '']);
-		setCurrentPlayer('X');
-		setIsDraw(false);
-	};
 	return (
 		<div className={styles.information_container}>
 			{isDraw ? (

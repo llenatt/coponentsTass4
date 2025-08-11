@@ -4,7 +4,7 @@ import { Information } from '../information/information';
 export const GameLayout = ({ gameState }) => {
 	return (
 		<div className={styles.gameLayout}>
-			<Information gameState={gameState} />
+			<Information {...gameState} />
 		</div>
 	);
 };
